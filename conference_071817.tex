@@ -134,7 +134,92 @@ Finalmente, hechas las configuraciones deseadas, se debe dar clic en Start para 
 
 \subsection{Instalación en Linux (Debian/Ubuntu)}
 
-Para las distribuciones de Linux el proceso es diferente. 
+Para las distribuciones de Linux el proceso es diferente. Es recomendable ir a la página https://neo4j.com/docs/operations-manual/current/installation/linux/debian/ para mayor información. \\
+Para instalarlo se debe cumplir con el requisito de tener instalado Java 8 runtime. Para ello se debe ejecutar las siguientes sentencias, para tener acceso al repositorio e Java 8, como se muestran en las Figuras \ref{fig7} y \ref{fig8} 
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{java_repo.png}
+\end{center}
+\caption{Agregar repositorio de Java Runtime.}
+\label{fig7}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{sudo_update.png}
+\end{center}
+\caption{Actualizar repositorios de Linux.}
+\label{fig8}
+\end{figure}
+
+Se usa la siguiente sentencia para poder instalar como tal el runtime de Java, como se observa en la Figura \ref{fig9}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{install_java.png}
+\end{center}
+\caption{Instalación del Runtime de Java en Linux.}
+\label{fig9}
+\end{figure}
+
+%sudo apt-get -t jessie-backports install ca-certificates-java
+
+Una vez hecho esto, se debe agregar el repositorio de Neo4j. Para ello se ejecuta la siguiente sentencia desde la terminal, como se muestra en la Figura \ref{fig10}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{neo4j_repo_f.png}
+\end{center}
+\caption{Repositorios de Neo4j en Linux.}
+\label{fig10}
+\end{figure}
+
+Finalmente, se instala Neo4j, haciendo lo que se muestra en la Figura \ref{fig11}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{install_neo4j.png}
+\end{center}
+\caption{Repositorios de Neo4j en Linux.}
+\label{fig11}
+\end{figure}
+
+Para iniciar el servidor y arrancar en gestor de base de datos, se debe ejecutar el comando que se muestra en al Figura \ref{fig12}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{start_service_neo.png}
+\end{center}
+\caption{Inicio del servidor de Neo4j en Linux.}
+\label{fig12}
+\end{figure}
+
+\subsection{Prueba de la instalación}
+
+Sin importar qué distribución  o qué sistema operativo se haya utilizado, se puede probar la correcta instalación utilizando el explorador Web. Se dirige a la dirección $localhost:7474/browser/$. 
+\\
+En esta dirección se tendrá todo el acceso y gestión de la base de datos: es un aplicativo corriendo sobre un explorador Web. Esto se muestra en la Figura \ref{fig13}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{web_browser1.png}
+\end{center}
+\caption{Neo4j corriendo desde el explorador Web.}
+\label{fig13}
+\end{figure}
+
+La contraseña al iniciar Neo4j por primera vez por defecto es $neo4j$. Luego de ingresarla se pedirá se cambia la contraseña, como se muestra en la Figura \ref{fig14}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{web_change_p.png}
+\end{center}
+\caption{Cambio de contraseña en Neo4j por primera vez.}
+\label{fig14}
+\end{figure}
+
 
 \subsection{Equations}
 Number equations consecutively. To make your 
