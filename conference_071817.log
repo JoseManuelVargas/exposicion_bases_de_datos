@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  2 NOV 2017 20:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  2 NOV 2017 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,13 +726,22 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box31
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 143.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (./conference_071817.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -978,7 +987,12 @@ File: crear_nodo_label1.png Graphic file (type png)
 Package pdftex.def Info: crear_nodo_label1.png used on input line 255.
 (pdftex.def)             Requested size: 232.19843pt x 103.34828pt.
 
-Underfull \hbox (badness 1648) in paragraph at lines 261--262
+Underfull \hbox (badness 1400) in paragraph at lines 261--264
+\OT1/ptm/m/n/10 Dependiendo de la apli-ca-ci[]on Neo4j per-mi-te te-ner m[]as
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 261--264
 \OT1/ptm/m/n/10 dad. Es-to se rea-li-za agre-gan-do la-bels con : de ma-ne-
  []
 
@@ -986,26 +1000,55 @@ Underfull \hbox (badness 1648) in paragraph at lines 261--262
 File: crear_nodo_label2.png Graphic file (type png)
 
 <use crear_nodo_label2.png>
-Package pdftex.def Info: crear_nodo_label2.png used on input line 265.
+Package pdftex.def Info: crear_nodo_label2.png used on input line 267.
 (pdftex.def)             Requested size: 232.19843pt x 103.2164pt.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 275.
 
-Underfull \vbox (badness 7451) has occurred while \output is active []
 
- [4 <./create_node1.png> <./crear_nodo_label1.png> <./crear_nodo_label2.png>]
-<fig2.jpeg, id=45, 301.125pt x 168.63pt>
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 275.
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
+\OT1/ptm/m/n/10 Un ejem-plo de la crea-ci[]on de un no-do con
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 273--276
+\OT1/ptm/m/n/10 pro-pie-da-des es usan-do la si-guien-te sen-ten-cia: []\OT1/pc
+r/m/n/10 CREATE[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
+\OT1/pcr/m/n/10 ([]persona[][]:Persona[] \OMS/cmsy/m/n/10 f \OT1/pcr/m/n/10 nam
+e: "[]Mi nombre[]"\OMS/cmsy/m/n/10 g \OT1/pcr/m/n/10 )
+ []
+
+<crear_nodo_prop1.png, id=42, 1170.3725pt x 529.98pt>
+File: crear_nodo_prop1.png Graphic file (type png)
+
+<use crear_nodo_prop1.png>
+Package pdftex.def Info: crear_nodo_prop1.png used on input line 279.
+(pdftex.def)             Requested size: 232.19843pt x 105.14499pt.
+ [4 <./create_node1.png> <./crear_nodo_label1.png> <./crear_nodo_label2.png> <.
+/crear_nodo_prop1.png>]
+<fig2.jpeg, id=47, 301.125pt x 168.63pt>
 File: fig2.jpeg Graphic file (type jpg)
  <use fig2.jpeg>
-Package pdftex.def Info: fig2.jpeg used on input line 395.
+Package pdftex.def Info: fig2.jpeg used on input line 410.
 (pdftex.def)             Requested size: 232.19843pt x 130.03589pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 407.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 422.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 407.
- [5 <./fig2.jpeg>]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 422.
+ [5]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1017,20 +1060,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (./conference_071817.aux
+[6 <./fig2.jpeg>] (./conference_071817.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5373 strings out of 493029
- 75968 string characters out of 6136233
- 147691 words of memory out of 5000000
- 8782 multiletter control sequences out of 15000+600000
+ 5821 strings out of 493029
+ 81005 string characters out of 6136233
+ 158961 words of memory out of 5000000
+ 9224 multiletter control sequences out of 15000+600000
  49989 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,30p,631b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,35p,631b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
@@ -1041,10 +1082,10 @@ er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_071817.pdf (6 pages, 602807 bytes).
+Output written on conference_071817.pdf (6 pages, 620912 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 89 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

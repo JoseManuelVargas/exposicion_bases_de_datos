@@ -10,7 +10,7 @@
 \usepackage[spanish]{babel} %ESPAÑOL
 \usepackage[utf8]{inputenc}
 \usepackage{float}
-\usepackage{color}
+\usepackage{xcolor}
 
 %%
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
@@ -258,6 +258,8 @@ Para agregar un label se hace de la siguiente manera: \texttt{\textcolor{green}{
 \label{fig17}
 \end{figure}
 
+El número que se encuentra dentro del nodo (el círculo) es el id. Este es un identificador único de cada nodo. Si se posiciona el cursor sobre el nodo se observará que dice id.
+\\
 Dependiendo de la aplicación Neo4j permite tener más de un label para un nodo. Este sería el caso, por ejemplo, para nodos que pertenezcan a dos o más categorías. Un ejemplo sería una persona que tenga una nacionalidad. Esto se realiza agregando labels con : de manera consecutiva. Se puede usar la siguiente sentencia como ejemplo: \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{persona}\textcolor{red}{:Persona:Colombia}) \textcolor{green}{RETURN} \textcolor{blue}{persona}}. Esto se observa en la Figura \ref{fig18}.
 
 \begin{figure}[H]
@@ -266,6 +268,18 @@ Dependiendo de la aplicación Neo4j permite tener más de un label para un nodo.
 \end{center}
 \caption{Nodo con dos label.}
 \label{fig18}
+\end{figure}
+
+Hasta este punto se han creado nodos que pertenecen a una o más categorías. Ahora hace falta añadir información a cada nodo. Esto se realiza por medio de las propiedades. Para agregar información se escribe dentro de {} al momento de crear el nodo (se puede agregar o editar información luego de crearlos). La información se agrega escribiendo el nombre del campo seguido de : y finalmente el valor. El valor puede ser numérico (entero o de coma flotante), un string, valor booleano o un arregla del mismo tipo de datos.
+\\
+Un ejemplo de la creación de un nodo con propiedades es usando la siguiente sentencia:  \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{persona}\textcolor{red}{:Persona} \{ name:  "\textcolor{brown}{Mi nombre}" \} ) \textcolor{green}{RETURN} \textcolor{blue}{persona}}. Así mismo se pueden agregar más propiedades. Esto se muestra en la Figura \ref{fig19}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{crear_nodo_prop1.png}
+\end{center}
+\caption{Nodo con propiedades.}
+\label{fig19}
 \end{figure}
 
 
