@@ -349,7 +349,43 @@ Para consultar por el id del nodo se utiliza simplemente la condición \texttt{\
 
 \section{Cambiar o agregar propiedades de los nodos.}
 
+Para cambiar o añadir alguna propiedad a un nodo ya creado, se debe primero realizar una consulta que direccione hacia dicho nodo. Por ejemplo, de los nodos creados el nodo con id 43 no pertenece a ninguna categoría, ningún label. Primero se debe asegurar es el nodo deseado, así que se ejecuta la consulta \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{43} \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado de la consulta se observa en la Figura \ref{fig26}.
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{consulta_id2.png}
+\end{center}
+\caption{Consulta del nodo por el id.}
+\label{fig26}
+\end{figure}
+
+Ahora, se utiliza la palabra reservada \texttt{\textcolor{green}{SET}} para cambiar alguna propiedad o algún Label. En este caso se quiere cambiar el label, así que se utiliza la consulta seguida de la sentencia \texttt{\textcolor{green}{SET} \textcolor{blue}{n}\textcolor{red}{:Persona}}. La sentencia quedaría así: \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{43} \textcolor{green}{SET} \textcolor{blue}{n}\textcolor{red}{:Persona} \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado se observa en la Figura \ref{fig27}.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{set_label1.png}
+\end{center}
+\caption{Cambio del label de un nodo.}
+\label{fig27}
+\end{figure}
+
+Si el nodo ya tenía un label, al hacer esta sentencia simplemente se agregaría un nuevo label. Para agregar dos o más labels en una sola sentencia se utiliza la misma lógica, solo que se agregan los labels deseados separados por : Esto se muestra en esta sentencia \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{43} \textcolor{green}{SET} \textcolor{blue}{n}\textcolor{red}{:Persona:Colombia} \textcolor{green}{RETURN} \textcolor{blue}{n}}
+\\
+Para agregar una propiedad o para cambiar el valor de una propiedad ya existente se utiliza la sentencia \texttt{\textcolor{green}{SET}} seguida del nombre que se desea asignar al nodo (normalmente \texttt{\textcolor{blue}{n}}) luego un punto ., seguido del nombre de la propiedad, luego el signo igual y finalmente el valor que deseamos asignar. Un ejemplo sería \texttt{\textcolor{green}{SET} \textcolor{blue}{n}.name= "\textcolor{brown}{Otro nombre}"}. En este caso, si la propiedad ya existe y tiene valor en dicho nodo, Neo4j cambiará el valor por el que se le está ingresando. En caso que no exista, se creará la propiedad y se asignará el valor. 
+\\
+Un ejemplo de agregar una propiedad sería el siguiente \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{SET} \textcolor{blue}{n}.name= "\textcolor{brown}{Otro nombre}"  \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado se muestra en la Figura \ref{fig28}.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{set_nombre1.png}
+\end{center}
+\caption{Agregar la propiedad nombre de un nodo.}
+\label{fig28}
+\end{figure}
+
+Otra manera de agregar o cambiar propiedades es utilizando una sentencia similar a la usada cuando se crearon las propiedades con los { }. 
 
 \section*{Acknowledgment}
 
