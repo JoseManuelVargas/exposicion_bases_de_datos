@@ -270,7 +270,7 @@ Dependiendo de la aplicación Neo4j permite tener más de un label para un nodo.
 \label{fig18}
 \end{figure}
 
-Hasta este punto se han creado nodos que pertenecen a una o más categorías. Ahora hace falta añadir información a cada nodo. Esto se realiza por medio de las propiedades. Para agregar información se escribe dentro de {} al momento de crear el nodo (se puede agregar o editar información luego de crearlos). La información se agrega escribiendo el nombre del campo seguido de : y finalmente el valor. El valor puede ser numérico (entero o de coma flotante), un string, valor booleano o un arregla del mismo tipo de datos.
+Hasta este punto se han creado nodos que pertenecen a una o más categorías. Ahora hace falta añadir información a cada nodo. Esto se realiza por medio de las propiedades. Para agregar información se escribe dentro de \{ \} al momento de crear el nodo (se puede agregar o editar información luego de crearlos). La información se agrega escribiendo el nombre del campo seguido de : y finalmente el valor. El valor puede ser numérico (entero o de coma flotante), un string, valor booleano o un arregla del mismo tipo de datos.
 \\
 Un ejemplo de la creación de un nodo con propiedades es usando la siguiente sentencia:  \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{persona}\textcolor{red}{:Persona} \{ name:  "\textcolor{brown}{Mi nombre}" \} ) \textcolor{green}{RETURN} \textcolor{blue}{persona}}. Así mismo se pueden agregar más propiedades. Esto se muestra en la Figura \ref{fig19}.
 
@@ -317,7 +317,7 @@ Si se quiere buscar los nodos que pertenezcan a la misma categoría, grupo, clas
 \label{fig22}
 \end{figure}
 
-Otra manera de consultar nodos y filtrarlos es por sus propiedades. Se podría preguntar por los nodos que tengan cierto nombre. La sentencia es similar a la manera que se creó un nodo con propiedades, usando { } e ingresando las propiedades dentro. Por ejemplo, se podría buscar los nodos que tengan el nombre "Mi nombre". Para ello se utiliza al sentencia \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n} \{ name: "\textcolor{brown}{Mi nombre}" \}) \textcolor{green}{RETURN} \textcolor{blue}{n} \textcolor{green}{LIMIT} \textcolor{blue}{4}}. Se insiste que la letra \texttt{\textcolor{blue}{n}} es el nombre que se le asigna a los nodos encontrados en esta sentencia. De manera que bien se podría utilizar otra letra o cualquier palabra, sin cambiar el resultado. También es posible hacer la consulta buscando por los nodos que tengan el nombre "Mi nombre" y que además perezcan a Personas. Esto se muestra en la siguiente sentencia \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{yo}\textcolor{red}{:Persona} \{ name: "\textcolor{brown}{Mi nombre}" \}) \textcolor{green}{RETURN} \textcolor{blue}{yo} \textcolor{green}{LIMIT} \textcolor{blue}{4}}. El resultado se observa en la Figura \ref{fig23}
+Otra manera de consultar nodos y filtrarlos es por sus propiedades. Se podría preguntar por los nodos que tengan cierto nombre. La sentencia es similar a la manera que se creó un nodo con propiedades, usando \{ \} e ingresando las propiedades dentro. Por ejemplo, se podría buscar los nodos que tengan el nombre "Mi nombre". Para ello se utiliza al sentencia \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n} \{ name: "\textcolor{brown}{Mi nombre}" \}) \textcolor{green}{RETURN} \textcolor{blue}{n} \textcolor{green}{LIMIT} \textcolor{blue}{4}}. Se insiste que la letra \texttt{\textcolor{blue}{n}} es el nombre que se le asigna a los nodos encontrados en esta sentencia. De manera que bien se podría utilizar otra letra o cualquier palabra, sin cambiar el resultado. También es posible hacer la consulta buscando por los nodos que tengan el nombre "Mi nombre" y que además perezcan a Personas. Esto se muestra en la siguiente sentencia \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{yo}\textcolor{red}{:Persona} \{ name: "\textcolor{brown}{Mi nombre}" \}) \textcolor{green}{RETURN} \textcolor{blue}{yo} \textcolor{green}{LIMIT} \textcolor{blue}{4}}. El resultado se observa en la Figura \ref{fig23}
 
 \begin{figure}[H]
 \begin{center}
@@ -327,7 +327,7 @@ Otra manera de consultar nodos y filtrarlos es por sus propiedades. Se podría p
 \label{fig23}
 \end{figure}
 
-Para finalizar con las consultas básicas se va a utilizar un último criterio de búsqueda: consultas por el id del nodo. Para conocer todas las propiedades de un nodo, se debe posicionar el cursor sobre el nodo deseado y aparecerán las propiedades en la parte inferior. Junto a las propiedades se observa el id del nodo dentro de < >. Esto se observa en la Figura \ref{fig24}.
+Para finalizar con las consultas básicas se va a utilizar un último criterio de búsqueda: consultas por el id del nodo. Para conocer todas las propiedades de un nodo, se debe posicionar el cursor sobre el nodo deseado y aparecerán las propiedades en la parte inferior. Junto a las propiedades se observa el id del nodo dentro de $<$ $>$. Esto se observa en la Figura \ref{fig24}.
 
 \begin{figure}[H]
 \begin{center}
@@ -385,7 +385,51 @@ Un ejemplo de agregar una propiedad sería el siguiente \texttt{\textcolor{green
 \label{fig28}
 \end{figure}
 
-Otra manera de agregar o cambiar propiedades es utilizando una sentencia similar a la usada cuando se crearon las propiedades con los { }. 
+Otra manera de agregar o cambiar propiedades es utilizando una sentencia similar a la usada cuando se crearon las propiedades con los \{ \}. Aquí se debe tener cuidado. La sentencia \texttt{\textcolor{green}{SET}} quedaría así \texttt{\textcolor{green}{SET} \textcolor{blue}{n} += \{ name: "\textcolor{brown}{Otro nombre}" \}}. En este caso la sentencia buscaría si existe alguna propiedad \texttt{name}. Si es así cambia su valor a \texttt{"Otro nombre"}, sino la crea y asigna el valor. Si no se escribe el signo \texttt{+} junto al signo \texttt{=} se dejará como única propiedad la que se está asignando, es decir, se borrarán todas las demás propiedades. 
+\\
+Un ejemplo de agregar o editar una propiedad con este tipo de sentencias es el siguiente: \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{SET} \textcolor{blue}{n} += \{ name: "\textcolor{brown}{Segundo nombre}" \}  \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resutlado se muestra en la Figura \ref{fig29}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{set_nombre2.png}
+\end{center}
+\caption{Cambiar la propiedad nombre de un nodo.}
+\label{fig29}
+\end{figure}
+
+Para eliminar una propiedad se realiza similar a establecer su valor. Solo que se asigna un valor nulo o \texttt{\textcolor{green}{null}}. Esta es una manera sencilla de hacerlo. Un ejemplo de esto se muestra en la sentencia \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{SET} \textcolor{blue}{n}.name= \textcolor{green}{null}  \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado se muestra en la Figura \ref{fig30}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{set_nombre3.png}
+\end{center}
+\caption{Borrar la propiedad nombre de un nodo.}
+\label{fig30}
+\end{figure}
+
+Otra manera se borrar una propiedad es utilizando la palabra clave \texttt{\textcolor{green}{REMOVE}}. Se usa de manera similar a la palabra \texttt{\textcolor{green}{SET}}, pero no se asigna valor a la propiedad. Por ejemplo se usaría simplemente \texttt{\textcolor{green}{REMOVE} \textcolor{blue}{n}.name}. Una sentencia de ejemplo sería \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{REMOVE} \textcolor{blue}{n}.name  \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado se muestra en la Figura \ref{fig31}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{remove_nombre1.png}
+\end{center}
+\caption{Borrado de la propiedad nombre de un nodo.}
+\label{fig31}
+\end{figure}
+
+Finalmente con la misma sentencia \texttt{\textcolor{green}{REMOVE}} se puede borrar labels se un nodo. Se hace de la misma manera que se asignaron con la sentencia \texttt{\textcolor{green}{SET}}. Un ejemplo sería el siguiente \texttt{\textcolor{green}{REMOVE} \textcolor{blue}{n}\textcolor{red}{:Colombia}}. La sentencia quedaría así: \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{43} \textcolor{green}{REMOVE} \textcolor{blue}{n}\textcolor{red}{:Colombia} \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado se observa en la Figura \ref{fig32}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{remove_label1.png}
+\end{center}
+\caption{Borrado del label de un nodo.}
+\label{fig32}
+\end{figure}
+
+\section{Creación de relaciones.}
+
+
 
 \section*{Acknowledgment}
 
