@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  27 OCT 2017 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  2 NOV 2017 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,31 +726,39 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box31
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 143.
+)
 (./conference_071817.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `conference_071817.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    ... okay on input line 18.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -814,15 +822,15 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 16.
-LaTeX Info: Redefining \% on input line 16.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 37.
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -830,36 +838,36 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <neo4j_logo.png, id=1, 312.16624pt x 162.6075pt>
 File: neo4j_logo.png Graphic file (type png)
  <use neo4j_logo.png>
-Package pdftex.def Info: neo4j_logo.png used on input line 58.
+Package pdftex.def Info: neo4j_logo.png used on input line 60.
 (pdftex.def)             Requested size: 232.19843pt x 120.9554pt.
 
 <graphDB.png, id=2, 72.27pt x 44.92786pt>
 File: graphDB.png Graphic file (type png)
  <use graphDB.png>
-Package pdftex.def Info: graphDB.png used on input line 71.
+Package pdftex.def Info: graphDB.png used on input line 73.
 (pdftex.def)             Requested size: 232.19843pt x 144.35817pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 []\OT1/ptm/m/n/10 Requerimientos: https://neo4j.com/docs/operations-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 []\OT1/ptm/m/n/10 Instalaci[]on pa-ra dis-tri-bu-cio-nes Li-nux de De-bian
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 \OT1/ptm/m/n/10 (Ubun-tu): https://neo4j.com/docs/operations-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 []\OT1/ptm/m/n/10 Instalaci[]on pa-ra sis-te-mas Win-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 \OT1/ptm/m/n/10 dow: https://neo4j.com/docs/operations-
  []
 
@@ -871,100 +879,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 File: neo4j_install02.png Graphic file (type png)
 
 <use neo4j_install02.png>
-Package pdftex.def Info: neo4j_install02.png used on input line 98.
+Package pdftex.def Info: neo4j_install02.png used on input line 100.
 (pdftex.def)             Requested size: 232.19843pt x 190.2678pt.
 
 <neo4j_install06.png, id=14, 410.53375pt x 218.8175pt>
 File: neo4j_install06.png Graphic file (type png)
 
 <use neo4j_install06.png>
-Package pdftex.def Info: neo4j_install06.png used on input line 108.
+Package pdftex.def Info: neo4j_install06.png used on input line 110.
 (pdftex.def)             Requested size: 232.19843pt x 123.76233pt.
 
 <neo4j_install07.png, id=16, 396.48125pt x 309.155pt>
 File: neo4j_install07.png Graphic file (type png)
 
 <use neo4j_install07.png>
-Package pdftex.def Info: neo4j_install07.png used on input line 119.
+Package pdftex.def Info: neo4j_install07.png used on input line 121.
 (pdftex.def)             Requested size: 232.19843pt x 181.06013pt.
  <neo4j_install09.png, id=17, 409.53pt x 218.8175pt>
 File: neo4j_install09.png Graphic file (type png)
 
 <use neo4j_install09.png>
-Package pdftex.def Info: neo4j_install09.png used on input line 129.
+Package pdftex.def Info: neo4j_install09.png used on input line 131.
 (pdftex.def)             Requested size: 232.19843pt x 124.0695pt.
  <java_repo.png, id=18, 680.5425pt x 23.08624pt>
 File: java_repo.png Graphic file (type png)
 
 <use java_repo.png>
-Package pdftex.def Info: java_repo.png used on input line 143.
+Package pdftex.def Info: java_repo.png used on input line 145.
 (pdftex.def)             Requested size: 232.19843pt x 7.87668pt.
  <sudo_update.png, id=19, 449.68pt x 20.075pt>
 File: sudo_update.png Graphic file (type png)
 
 <use sudo_update.png>
-Package pdftex.def Info: sudo_update.png used on input line 151.
+Package pdftex.def Info: sudo_update.png used on input line 153.
 (pdftex.def)             Requested size: 232.19843pt x 10.36613pt.
  <install_java.png, id=20, 679.53876pt x 276.03125pt>
 File: install_java.png Graphic file (type png)
 
 <use install_java.png>
-Package pdftex.def Info: install_java.png used on input line 161.
+Package pdftex.def Info: install_java.png used on input line 163.
 (pdftex.def)             Requested size: 232.19843pt x 94.3169pt.
  [2 <./neo4j_install02.png> <./neo4j_install06.png> <./neo4j_install07.png> <./
 neo4j_install09.png> <./java_repo.png> <./sudo_update.png>] <neo4j_repo_f.png, 
 id=27, 728.7225pt x 326.21875pt>
 File: neo4j_repo_f.png Graphic file (type png)
  <use neo4j_repo_f.png>
-Package pdftex.def Info: neo4j_repo_f.png used on input line 173.
+Package pdftex.def Info: neo4j_repo_f.png used on input line 175.
 (pdftex.def)             Requested size: 232.19843pt x 103.94414pt.
 
 <install_neo4j.png, id=28, 610.28pt x 206.7725pt>
 File: install_neo4j.png Graphic file (type png)
  <use install_neo4j.png>
-Package pdftex.def Info: install_neo4j.png used on input line 183.
+Package pdftex.def Info: install_neo4j.png used on input line 185.
 (pdftex.def)             Requested size: 232.19843pt x 78.67216pt.
 
 <start_service_neo.png, id=29, 498.86375pt x 16.06pt>
 File: start_service_neo.png Graphic file (type png)
 
 <use start_service_neo.png>
-Package pdftex.def Info: start_service_neo.png used on input line 193.
+Package pdftex.def Info: start_service_neo.png used on input line 195.
 (pdftex.def)             Requested size: 232.19843pt x 7.47516pt.
 
 <web_browser1.png, id=30, 1231.60126pt x 696.6025pt>
 File: web_browser1.png Graphic file (type png)
  <use web_browser1.png>
-Package pdftex.def Info: web_browser1.png used on input line 207.
+Package pdftex.def Info: web_browser1.png used on input line 209.
 (pdftex.def)             Requested size: 232.19843pt x 131.3248pt.
 
 <web_change_p.png, id=31, 1231.60126pt x 697.60625pt>
 File: web_change_p.png Graphic file (type png)
  <use web_change_p.png>
-Package pdftex.def Info: web_change_p.png used on input line 217.
+Package pdftex.def Info: web_change_p.png used on input line 219.
 (pdftex.def)             Requested size: 232.19843pt x 131.51404pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 242.
+
+<inicio_neo4j.png, id=32, 1228.59pt x 699.61375pt>
+File: inicio_neo4j.png Graphic file (type png)
+ <use inicio_neo4j.png>
+Package pdftex.def Info: inicio_neo4j.png used on input line 229.
+(pdftex.def)             Requested size: 232.19843pt x 132.22342pt.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 237.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [3 <./install_java.png> <./neo4j_repo_f.png> <./install_neo4j.png> <./start_s
-ervice_neo.png> <./web_browser1.png> <./web_change_p.png>] <fig2.jpeg, id=38, 3
-01.125pt x 168.63pt>
+ervice_neo.png> <./web_browser1.png> <./web_change_p.png> <./inicio_neo4j.png>]
+
+<create_node1.png, id=39, 1171.37625pt x 528.97626pt>
+File: create_node1.png Graphic file (type png)
+ <use create_node1.png>
+Package pdftex.def Info: create_node1.png used on input line 241.
+(pdftex.def)             Requested size: 232.19843pt x 104.85707pt.
+
+<crear_nodo_label1.png, id=40, 1179.40625pt x 524.96124pt>
+File: crear_nodo_label1.png Graphic file (type png)
+
+<use crear_nodo_label1.png>
+Package pdftex.def Info: crear_nodo_label1.png used on input line 255.
+(pdftex.def)             Requested size: 232.19843pt x 103.34828pt.
+
+Underfull \hbox (badness 1648) in paragraph at lines 261--262
+\OT1/ptm/m/n/10 dad. Es-to se rea-li-za agre-gan-do la-bels con : de ma-ne-
+ []
+
+<crear_nodo_label2.png, id=41, 1176.395pt x 522.95375pt>
+File: crear_nodo_label2.png Graphic file (type png)
+
+<use crear_nodo_label2.png>
+Package pdftex.def Info: crear_nodo_label2.png used on input line 265.
+(pdftex.def)             Requested size: 232.19843pt x 103.2164pt.
+
+Underfull \vbox (badness 7451) has occurred while \output is active []
+
+ [4 <./create_node1.png> <./crear_nodo_label1.png> <./crear_nodo_label2.png>]
+<fig2.jpeg, id=45, 301.125pt x 168.63pt>
 File: fig2.jpeg Graphic file (type jpg)
-
-<use fig2.jpeg>
-Package pdftex.def Info: fig2.jpeg used on input line 348.
+ <use fig2.jpeg>
+Package pdftex.def Info: fig2.jpeg used on input line 395.
 (pdftex.def)             Requested size: 232.19843pt x 130.03589pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 360.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 407.
 
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 360.
-
-[4]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 407.
+ [5 <./fig2.jpeg>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -976,18 +1017,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./fig2.jpeg>] (./conference_071817.aux
+[6
+
+] (./conference_071817.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5303 strings out of 493029
- 74783 string characters out of 6136233
- 147696 words of memory out of 5000000
- 8721 multiletter control sequences out of 15000+600000
+ 5373 strings out of 493029
+ 75968 string characters out of 6136233
+ 147691 words of memory out of 5000000
+ 8782 multiletter control sequences out of 15000+600000
  49989 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,10n,30p,588b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,30p,631b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
@@ -998,10 +1041,10 @@ er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_071817.pdf (5 pages, 490988 bytes).
+Output written on conference_071817.pdf (6 pages, 602807 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

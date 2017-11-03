@@ -10,6 +10,8 @@
 \usepackage[spanish]{babel} %ESPAÑOL
 \usepackage[utf8]{inputenc}
 \usepackage{float}
+\usepackage{color}
+
 %%
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -70,7 +72,7 @@ Las bases de datos orientadas a grafos (DBOG) cambian el concepto completamente 
 \begin{center}
 \includegraphics[width= 0.45 \textwidth]{graphDB.png}
 \end{center}
-\caption{Example of a DBOG.}
+\caption{Ejemplo de una DBOG.}
 \label{fig2}
 \end{figure}
 
@@ -220,6 +222,51 @@ La contraseña al iniciar Neo4j por primera vez por defecto es $neo4j$. Luego de
 \label{fig14}
 \end{figure}
 
+Una vez hecho esto, se estará en la página de inicio de Neo4j. Se verá la barra de ingreso de comandos (consultas), un espacio con las noticias y principales mensajes, un menú de accesos en el costado izquierdo y la conexión al servidor en sí. Todo esto se ilustra en la Figura \ref{fig15}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{inicio_neo4j.png}
+\end{center}
+\caption{Página de inicio de Neo4j.}
+\label{fig15}
+\end{figure}
+
+\section{Creación de nodos.}
+
+Una vez en el aplicativo de explorador se pueden crear nodos usando la sentencia \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{n})}. Al ejecutar la sentencia se verá un mensaje que dice que se creó un nodo en un tiempo determinado. Si se desea observar el nodo, se debe crear de esta manera: \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{n}) \textcolor{green}{RETURN} \textcolor{blue}{n}}. Esto se muestra en la Figura  \ref{fig16}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{create_node1.png}
+\end{center}
+\caption{Creación y visualización de un nodo.}
+\label{fig16}
+\end{figure}
+
+Así mismo es posible crear varios nodos al tiempo y visualizarlos con el comando \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{n}),(\textcolor{blue}{m}) \textcolor{green}{RETURN} \textcolor{blue}{n},\textcolor{blue}{m}}. 
+\\
+Un concepto importante en los nodos de Neo4j, son los label. Esta es una característica que define a qué grupo, clase o categoría pertenece el nodo. Por ejemplo, podemos crear nodos que pertenezcan y hagan referencia a personas. 
+\\
+Para agregar un label se hace de la siguiente manera: \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{n}\textcolor{red}{:Persona}) \textcolor{green}{RETURN} \textcolor{blue}{n}}. Se debe aclarar aquí que la letra \texttt{n} es únicamente una referencia al nodo dentro de la sentencia específica. Bien se podría llamarlo o hacer referencia de otra manera y no cambiaría nada en el resultado. Por ejemplo \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{yo}\textcolor{red}{:Persona}) \textcolor{green}{RETURN} \textcolor{blue}{yo}}. El resultado se muestra en la Figura \ref{fig17}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{crear_nodo_label1.png}
+\end{center}
+\caption{Nodo con label.}
+\label{fig17}
+\end{figure}
+
+Dependiendo de la aplicación Neo4j permite tener más de un label para un nodo. Este sería el caso, por ejemplo, para nodos que pertenezcan a dos o más categorías. Un ejemplo sería una persona que tenga una nacionalidad. Esto se realiza agregando labels con : de manera consecutiva. Se puede usar la siguiente sentencia como ejemplo: \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{persona}\textcolor{red}{:Persona:Colombia}) \textcolor{green}{RETURN} \textcolor{blue}{persona}}. Esto se observa en la Figura \ref{fig18}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{crear_nodo_label2.png}
+\end{center}
+\caption{Nodo con dos label.}
+\label{fig18}
+\end{figure}
 
 \subsection{Equations}
 Number equations consecutively. To make your 
