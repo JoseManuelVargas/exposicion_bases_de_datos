@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  3 NOV 2017 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  3 NOV 2017 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,6 +1142,36 @@ File: remove_label1.png Graphic file (type png)
 Package pdftex.def Info: remove_label1.png used on input line 424.
 (pdftex.def)             Requested size: 232.19843pt x 104.41365pt.
 
+<query_two1.png, id=66, 1176.395pt x 524.96124pt>
+File: query_two1.png Graphic file (type png)
+ <use query_two1.png>
+Package pdftex.def Info: query_two1.png used on input line 438.
+(pdftex.def)             Requested size: 232.19843pt x 103.61263pt.
+
+Underfull \hbox (badness 8132) in paragraph at lines 445--446
+[]\OT1/ptm/m/n/10 Para crear la re-la-ci[]on se uti-li-za la pa-la-bra cla-
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 445--446
+\OT1/ptm/m/n/10 ve []\OT1/pcr/m/n/10 CREATE[] \OT1/ptm/m/n/10 y de la si-guien-
+te ma-ne-ra: []\OT1/pcr/m/n/10 CREATE[] ([]n[])
+ []
+
+<relation_create1.png, id=67, 1172.38pt x 521.95pt>
+File: relation_create1.png Graphic file (type png)
+ <use relation_create1.png>
+Package pdftex.def Info: relation_create1.png used on input line 450.
+(pdftex.def)             Requested size: 232.19843pt x 103.36871pt.
+
+<relation_query1.png, id=68, 1172.38pt x 527.9725pt>
+File: relation_query1.png Graphic file (type png)
+ <use relation_query1.png>
+Package pdftex.def Info: relation_query1.png used on input line 460.
+(pdftex.def)             Requested size: 232.19843pt x 104.56143pt.
+
+[7 <./set_nombre3.png> <./remove_nombre1.png> <./remove_label1.png> <./query_tw
+o1.png> <./relation_create1.png> <./relation_query1.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1153,16 +1183,17 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7 <./set_nombre3.png> <./remove_nombre1.png> <./remove_label1.png>]
-(./conference_071817.aux
+[8
+
+] (./conference_071817.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5869 strings out of 493029
- 82114 string characters out of 6136233
- 154037 words of memory out of 5000000
- 9269 multiletter control sequences out of 15000+600000
+ 5891 strings out of 493029
+ 82508 string characters out of 6136233
+ 154064 words of memory out of 5000000
+ 9288 multiletter control sequences out of 15000+600000
  41068 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,11n,35p,1262b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1174,10 +1205,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_071817.pdf (7 pages, 834966 bytes).
+Output written on conference_071817.pdf (8 pages, 894957 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -429,6 +429,40 @@ Finalmente con la misma sentencia \texttt{\textcolor{green}{REMOVE}} se puede bo
 
 \section{Creación de relaciones.}
 
+Antes de crear relaciones, necesitamos poder hacer una consulta a lo dos nodos que queremos relacionar. Para ello se realiza de la misma manera usando comas para relacionar varios nodos. 
+\\
+Un ejemplo sería \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) , (\textcolor{blue}{m}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{AND} \textcolor{blue}{id}(\textcolor{blue}{m})=\textcolor{blue}{65}  \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m}}. El resultado se observa en la Figura \ref{fig33}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{query_two1.png}
+\end{center}
+\caption{Consulta de dos nodos simultáneos.}
+\label{fig33}
+\end{figure}
+
+
+Para crear la relación se utiliza la palabra clave \texttt{\textcolor{green}{CREATE}} y de la siguiente manera: \texttt{\textcolor{green}{CREATE} (\textcolor{blue}{n}) -[\textcolor{blue}{r}\textcolor{red}{:Amigos}]-> (\textcolor{blue}{m}) \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m}}. En este caso el nombre de la relación es \textcolor{blue}{r} y el tipo de la relación (similar a label) es \textcolor{red}{Amigos}. El ejemplo se muestra en la Figura \ref{fig34}.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{relation_create1.png}
+\end{center}
+\caption{Crear una relación.}
+\label{fig34}
+\end{figure}
+
+Para consultar la relación y los nodos, y visualizarlos se realiza de esta manera: \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) -[\textcolor{blue}{r}]-> (\textcolor{blue}{m}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{AND} \textcolor{blue}{id}(\textcolor{blue}{m})=\textcolor{blue}{65}  \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m}, , \textcolor{blue}{r}}. El resultado se observa en la Figura \ref{fig35}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{relation_query1.png}
+\end{center}
+\caption{Consulta de la relación creada.}
+\label{fig35}
+\end{figure}
+
 
 
 \section*{Acknowledgment}
