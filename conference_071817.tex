@@ -327,6 +327,29 @@ Otra manera de consultar nodos y filtrarlos es por sus propiedades. Se podría p
 \label{fig23}
 \end{figure}
 
+Para finalizar con las consultas básicas se va a utilizar un último criterio de búsqueda: consultas por el id del nodo. Para conocer todas las propiedades de un nodo, se debe posicionar el cursor sobre el nodo deseado y aparecerán las propiedades en la parte inferior. Junto a las propiedades se observa el id del nodo dentro de < >. Esto se observa en la Figura \ref{fig24}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{nodo_id.png}
+\end{center}
+\caption{Visualización de las propiedades del nodo.}
+\label{fig24}
+\end{figure}
+
+Para consultar por el id del nodo se utiliza simplemente la condición \texttt{\textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{65}}. El número 65 es un ejemplo para este caso. La consulta completa quedaría así \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{65} \textcolor{green}{RETURN} \textcolor{blue}{n}}. El resultado se observa en la Figura \ref{fig25}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width= 0.45 \textwidth]{consulta_id.png}
+\end{center}
+\caption{Consulta del nodo por el id.}
+\label{fig25}
+\end{figure}
+
+\section{Cambiar o agregar propiedades de los nodos.}
+
+
 
 \section*{Acknowledgment}
 
