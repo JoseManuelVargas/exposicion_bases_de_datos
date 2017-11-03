@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  2 NOV 2017 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.22)  3 NOV 2017 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,22 +1033,38 @@ File: crear_nodo_prop1.png Graphic file (type png)
 <use crear_nodo_prop1.png>
 Package pdftex.def Info: crear_nodo_prop1.png used on input line 279.
 (pdftex.def)             Requested size: 232.19843pt x 105.14499pt.
+ <consulta_todo1.png, id=43, 1172.38pt x 525.965pt>
+File: consulta_todo1.png Graphic file (type png)
+
+<use consulta_todo1.png>
+Package pdftex.def Info: consulta_todo1.png used on input line 293.
+(pdftex.def)             Requested size: 232.19843pt x 104.16385pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [4 <./create_node1.png> <./crear_nodo_label1.png> <./crear_nodo_label2.png> <.
-/crear_nodo_prop1.png>]
-<fig2.jpeg, id=47, 301.125pt x 168.63pt>
-File: fig2.jpeg Graphic file (type jpg)
- <use fig2.jpeg>
-Package pdftex.def Info: fig2.jpeg used on input line 410.
-(pdftex.def)             Requested size: 232.19843pt x 130.03589pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 422.
+/crear_nodo_prop1.png>] <consulta_limite1.png, id=48, 1168.365pt x 522.95375pt>
+File: consulta_limite1.png Graphic file (type png)
 
+<use consulta_limite1.png>
+Package pdftex.def Info: consulta_limite1.png used on input line 303.
+(pdftex.def)             Requested size: 232.19843pt x 103.92657pt.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 422.
- [5]
+<consulta_label1.png, id=49, 1168.365pt x 519.9425pt>
+File: consulta_label1.png Graphic file (type png)
+
+<use consulta_label1.png>
+Package pdftex.def Info: consulta_label1.png used on input line 314.
+(pdftex.def)             Requested size: 232.19843pt x 103.32816pt.
+
+<consulta_label2.png, id=50, 1169.36874pt x 524.96124pt>
+File: consulta_label2.png Graphic file (type png)
+
+<use consulta_label2.png>
+Package pdftex.def Info: consulta_label2.png used on input line 324.
+(pdftex.def)             Requested size: 232.19843pt x 104.23741pt.
+ [5 <./consulta_todo1.png> <./consulta_limite1.png> <./consulta_label1.png> <./
+consulta_label2.png>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1060,32 +1076,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <./fig2.jpeg>] (./conference_071817.aux
+[6
+
+] (./conference_071817.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5821 strings out of 493029
- 81005 string characters out of 6136233
- 158961 words of memory out of 5000000
- 9224 multiletter control sequences out of 15000+600000
- 49989 words of font info for 105 fonts, out of 8000000 for 9000
+ 5798 strings out of 493029
+ 80911 string characters out of 6136233
+ 153956 words of memory out of 5000000
+ 9211 multiletter control sequences out of 15000+600000
+ 40553 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,35p,631b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,35p,1260b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
-er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_071817.pdf (6 pages, 620912 bytes).
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_071817.pdf (6 pages, 662132 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
