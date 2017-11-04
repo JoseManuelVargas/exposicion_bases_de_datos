@@ -463,35 +463,31 @@ Para consultar la relación y los nodos, y visualizarlos se realiza de esta mane
 \label{fig35}
 \end{figure}
 
+A las relaciones se pueden establecer propiedades. Se realiza de varias maneras, ya sea al momento de crearlas o después de tenerlas ya creadas. Al crearlas se pueden agregar las propiedades de manera similar que como se hace con los nodos, utilizando \{ \} y escribiendo dentro la propiedad y su valor separados por :. Un ejemplo sería la sentencia  \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) , (\textcolor{blue}{m}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{AND} \textcolor{blue}{id}(\textcolor{blue}{m})=\textcolor{blue}{65} \textcolor{green}{CREATE} (\textcolor{blue}{n}) -[\textcolor{blue}{r}\textcolor{red}{:Amigos} \{year: \textcolor{blue}{2010}  \}]-> (\textcolor{blue}{m}) \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m}, \textcolor{blue}{r}}.
+\\
 
+Para establecer la propiedad después de haber creado la relación, se realiza la consulta y se utiliza la palabra reservada \texttt{\textcolor{green}{SET}}. Se hace de la misma manera que con los nodos, utilizando el nombre de la relación, escribiendo un punto, seguido del nombre de la propiedad, después un signo = y finalmente el valor de la propiedad. Una sentencia de ejemplo sería \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) -[\textcolor{blue}{r}]-> (\textcolor{blue}{m}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{AND} \textcolor{blue}{id}(\textcolor{blue}{m})=\textcolor{blue}{65} \textcolor{green}{SET} \textcolor{blue}{r}.name = " \textcolor{brown}{La relacion} " \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m},  \textcolor{blue}{r}}.
+\\
+Utilizando la misma lógica, se podría eliminar propiedades de las relaciones. Utilizando la palabra clave \texttt{\textcolor{green}{REMOVE}} en vez de \texttt{\textcolor{green}{SET}}. Y obviamente sin asignar ningún valor. La sentencia quedaría de esta manera:  \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) -[\textcolor{blue}{r}]-> (\textcolor{blue}{m}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{AND} \textcolor{blue}{id}(\textcolor{blue}{m})=\textcolor{blue}{65} \textcolor{green}{REMOVE} \textcolor{blue}{r}.name \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m} , \textcolor{blue}{r}}.
+\\
+Finalmente, para eliminar una relación se realiza la misma consulta y se utiliza el comando \texttt{\textcolor{green}{REMOVE} \textcolor{blue}{r}}. En este caso no se retorna la relación. La sentencia quedaría así: \texttt{\textcolor{green}{MATCH} (\textcolor{blue}{n}) -[\textcolor{blue}{r}]-> (\textcolor{blue}{m}) \textcolor{green}{WHERE} \textcolor{blue}{id}(\textcolor{blue}{n})=\textcolor{blue}{64} \textcolor{green}{AND} \textcolor{blue}{id}(\textcolor{blue}{m})=\textcolor{blue}{65} \textcolor{green}{DELETE} \textcolor{blue}{r} \textcolor{green}{RETURN} \textcolor{blue}{n} , \textcolor{blue}{m}}.
 
-\section*{Acknowledgment}
+\section{Constrains.}
+Los contrains son una parte fundamental en cualquier base de datos. En el caso de Neo4j no es la excepción. Para crearla se utiliza primero la palabra \texttt{\textcolor{green}{CREATE}} seguida de \texttt{\textcolor{green}{CONSTRAIN ON}}. A continuación se puede especificar si el constrain va dirigido a un nodo a una relación. Si va dirigido a un nodo se debe escribir lo siguiente \texttt{ ( \textcolor{blue}{n}\textcolor{red}{:Label} )}. En este caso la letra \texttt{\textcolor{blue}{n}} es el nombre del nodo con el que serán referenciados, mientras que \texttt{\textcolor{red}{Label}} es el label o categoría de los nodos que se desean aplicar el constrain. Después se escribe la palabra \texttt{\textcolor{green}{ASSERT}}. Finalmente se escribe una condición lógica a alguna propiedad del nodo \texttt{\textcolor{blue}{n}}, similar como se hace con otras bases de datos.
+\\
+Un ejemplo de un constrain para un nodo sería la sentencia  \texttt{\textcolor{green}{CREATE CONSTRAIN ON} (\textcolor{blue}{n}\textcolor{red}{:Persona}) \textcolor{green}{ASSERT} \textcolor{blue}{n}.name \textcolor{green}{IS UNIQUE}}. 
+\\
+Otro ejemplo es el siguiente  \texttt{\textcolor{green}{CREATE CONSTRAIN ON} (\textcolor{blue}{n}\textcolor{red}{:Persona}) \textcolor{green}{ASSERT} exists(\textcolor{blue}{n}.telefono)}.
+\\
+Para aplicar constrains a una relación se debe escribir primero \texttt{\textcolor{green}{CREATE CONSTRAIN ON}}, seguido de la representación de la relación, es decir, \texttt{()-[\textcolor{blue}{r}\textcolor{red}{:Label}]-()}. El resto es lo mismo, es decir, la palabra \texttt{\textcolor{green}{ASSERT}} seguido de la condición del constrain que se desea aplicar. 
+\\
+Un ejemplo de un constrain a una relación es la siguiente sentencia \texttt{\textcolor{green}{CREATE CONSTRAIN ON} ()-[\textcolor{blue}{r}\textcolor{red}{:Label}]-() \textcolor{green}{ASSERT} exists(\textcolor{blue}{r}.year)}.
+\\
+Para eliminar un constrain, sin importar de que tipo sea, se realiza la misma sentencia que se ejecutó para crearlo, pero en vez de utilizar la palabra  \texttt{\textcolor{green}{CREATE}} se utiliza la palabra  \texttt{\textcolor{green}{DROP}}. Un ejemplo sería texttt{\textcolor{green}{DROP CONSTRAIN ON} (\textcolor{blue}{n}\textcolor{red}{:Persona}) \textcolor{green}{ASSERT} \textcolor{blue}{n}.name \textcolor{green}{IS UNIQUE}}.
 
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
+\section*{Agradecimientos}
 
-\section*{References}
-
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
-
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
-
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
-
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
+Se da agradecimientos a la empresa Neo Technology por el desarrollo de la base de datos Neo4j de una manera intuitiva y fácil de manejar. Además se agradece a los desarrolladores del presente documento.
 
 
 \begin{thebibliography}{00}
